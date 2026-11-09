@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "name": "dungeons",
+  "controls": [
+    {
+      "id": "stick",
+      "label": "Analog kiri",
+      "mapping": "leftStick",
+      "x": 0.1,
+      "y": 0.65,
+      "size": 0.25,
+      "type": "stick",
+      "enabled": true
+    },
+    {
+      "id": "face0",
+      "label": "A",
+      "mapping": "a",
+      "x": 0.89,
+      "y": 0.72,
+      "size": 0.19,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "face1",
+      "label": "B",
+      "mapping": "b",
+      "x": 0.89,
+      "y": 0.34,
+      "size": 0.14,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "face2",
+      "label": "X",
+      "mapping": "x",
+      "x": 0.75,
+      "y": 0.8,
+      "size": 0.14,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "face3",
+      "label": "Y",
+      "mapping": "y",
+      "x": 0.75,
+      "y": 0.5,
+      "size": 0.14,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "lb",
+      "label": "LB",
+      "mapping": "lb",
+      "x": 0.625,
+      "y": 0.13,
+      "size": 0.12,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "rb",
+      "label": "RB",
+      "mapping": "rb",
+      "x": 0.75,
+      "y": 0.13,
+      "size": 0.12,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "rt",
+      "label": "RT",
+      "mapping": "rt",
+      "x": 0.625,
+      "y": 0.5,
+      "size": 0.14,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "start",
+      "label": "Menu",
+      "mapping": "start",
+      "x": 0.055,
+      "y": 0.1,
+      "size": 0.08,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "dpad-up",
+      "label": "↑",
+      "mapping": "up",
+      "x": 0.3,
+      "y": 0.62,
+      "size": 0.04,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "dpad-down",
+      "label": "↓",
+      "mapping": "down",
+      "x": 0.3,
+      "y": 0.84,
+      "size": 0.04,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "dpad-left",
+      "label": "←",
+      "mapping": "left",
+      "x": 0.255,
+      "y": 0.73,
+      "size": 0.04,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "dpad-right",
+      "label": "→",
+      "mapping": "right",
+      "x": 0.345,
+      "y": 0.73,
+      "size": 0.04,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "ls",
+      "label": "LS",
+      "mapping": "ls",
+      "x": 0.135,
+      "y": 0.1,
+      "size": 0.08,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "rs",
+      "label": "RS",
+      "mapping": "rs",
+      "x": 0.215,
+      "y": 0.1,
+      "size": 0.08,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "lt",
+      "label": "LT",
+      "mapping": "lt",
+      "x": 0.295,
+      "y": 0.1,
+      "size": 0.08,
+      "type": "button",
+      "enabled": true
+    },
+    {
+      "id": "roll",
+      "label": "Roll arah",
+      "mapping": "rightStick",
+      "x": 0.625,
+      "y": 0.8,
+      "size": 0.12,
+      "type": "stick",
+      "enabled": true
+    }
+  ],
+  "deadZone": 0,
+  "sensitivity": 1,
+  "opacity": 0.9,
+  "leftHanded": false,
+  "floatingStick": true,
+  "dpadStyle": "joined"
+}

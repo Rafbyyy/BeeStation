@@ -1,0 +1,120 @@
+.phone {
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  --control-surface: #2d3849;
+  --control-edge: #ffffff24;
+  --control-shadow: 0 5px 14px #0004, inset 0 1px #ffffff1c;
+  color: #eef2f8;
+}
+.phone .controller-shell { background: #10161f; }
+.phone .controller-top { background: #19212c; border-bottom: 1px solid #ffffff10; }
+.phone .controller-stage {
+  background: radial-gradient(ellipse at 12% 65%, #698cb416, transparent 40%), radial-gradient(ellipse at 85% 55%, #f5c45109, transparent 45%), #111821;
+}
+.phone .controller-top>div, .phone #connection, .phone .controller-status #metrics { font-size: 11px; }
+.phone .controller-top #edit::before, .phone .controller-top #fullscreen::before {
+  box-sizing: border-box;
+  top: calc(50% - 4px);
+  background: #273243;
+  border: 1px solid var(--control-edge);
+  border-radius: 9px;
+  box-shadow: inset 0 1px #ffffff10;
+}
+.phone .controller-top #edit>span, .phone .controller-top #fullscreen>span { top: -4px; font-family: 'Segoe UI Symbol', sans-serif; }
+.phone .touch-control {
+  --key-color: var(--control-surface);
+  background-color: var(--key-color);
+  background-image: linear-gradient(150deg, #ffffff10, transparent 55%);
+  color: #ecf1f7;
+  border: 1px solid var(--control-edge);
+  border-radius: 50%;
+  box-shadow: var(--control-shadow);
+  font-size: clamp(12px, 1.6vw, 16px);
+  font-weight: 600;
+  text-shadow: none;
+}
+.phone .touch-control:hover { background-color: var(--key-color); }
+.phone .touch-control[data-mapping=a] { --key-color: #68c957; }
+.phone .touch-control[data-mapping=b] { --key-color: #ee7164; }
+.phone .touch-control[data-mapping=x] { --key-color: #65a5f4; }
+.phone .touch-control[data-mapping=y] { --key-color: #f2cf56; }
+.phone .touch-control:is([data-mapping=a], [data-mapping=b], [data-mapping=x], [data-mapping=y]) {
+  color: #101923;
+  border-color: #ffffff30;
+  font-size: clamp(20px, 3vw, 30px);
+  font-weight: 750;
+}
+.phone .touch-control.pressed {
+  background-color: var(--key-color);
+  background-image: none;
+  border-color: #eef2f8;
+  box-shadow: inset 0 3px 8px #0005, 0 0 0 2px #ffffff14;
+}
+.phone .touch-control:focus-visible { outline-offset: 3px; }
+.phone .stick, .phone .stick:hover, .phone .stick.pressed {
+  background: radial-gradient(circle, #1d2734 0 50%, #151d28 51%);
+  border: 1px solid #8199b530;
+  box-shadow: inset 0 2px 12px #0005, 0 1px #ffffff08;
+}
+.phone .stick.pressed { border-color: var(--player); }
+.phone .stick-knob {
+  border-radius: 50%;
+  border: 1px solid #ffffff1c;
+  background: linear-gradient(155deg, #63738a, #354256);
+  box-shadow: 0 5px 12px #0007, inset 0 1px #ffffff25;
+  font-size: 10px;
+  font-weight: 600;
+}
+.phone .touch-control.dpad-control:not(.dpad-joined),
+.phone .touch-control.dpad-control:not(.dpad-joined):hover,
+.phone .touch-control.dpad-control:not(.dpad-joined).pressed {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.phone .dpad-control::before { border-radius: 50%; border: 1px solid var(--control-edge); background: var(--control-surface); box-shadow: var(--control-shadow); }
+.phone .dpad-control.pressed::before { background: var(--player); }
+.phone .joined-dpad-center { background: var(--control-surface); }
+.phone .touch-control.dpad-joined, .phone .touch-control.dpad-joined:hover { border: 0; background: transparent; box-shadow: none; }
+.phone .touch-control.dpad-joined::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  border: 0;
+  border-radius: 36% 36% 0 0;
+  background: var(--control-surface);
+  box-shadow: inset 0 1px #ffffff24;
+  transform: translate(-50%, -50%) rotate(var(--dpad-turn, 0deg));
+  pointer-events: none;
+}
+.phone .dpad-joined[data-control=dpad-right] { --dpad-turn: 90deg; }
+.phone .dpad-joined[data-control=dpad-down] { --dpad-turn: 180deg; }
+.phone .dpad-joined[data-control=dpad-left] { --dpad-turn: -90deg; }
+.phone .touch-control.dpad-joined.pressed::before { background: var(--player); }
+.phone .dpad-control[data-mapping=right] { --arrow-turn: 90deg; }
+.phone .dpad-control[data-mapping=down] { --arrow-turn: 180deg; }
+.phone .dpad-control[data-mapping=left] { --arrow-turn: -90deg; }
+.phone .dpad-control:is([data-mapping=up], [data-mapping=down], [data-mapping=left], [data-mapping=right]) { font-size: 0; }
+.phone .dpad-control:is([data-mapping=up], [data-mapping=down], [data-mapping=left], [data-mapping=right])::after {
+  content: '';
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 12px; height: 12px;
+  background: #e7eef7;
+  clip-path: polygon(50% 10%, 100% 85%, 0 85%);
+  transform: translate(-50%, -50%) rotate(var(--arrow-turn, 0deg));
+  pointer-events: none;
+}
+.phone .dpad-control.pressed::after { background: #101923; }
+.phone .joined-dpad-center::after { content: ''; position: absolute; inset: calc(50% - 4px); border-radius: 50%; background: #14202e; pointer-events: none; }
+.phone .editor { background: #19212c; }
+.phone .editor input, .phone .editor select { background: #101720; border-color: #ffffff20; font-size: 14px; }
+.phone .editor label { font-size: 13px; }
+.phone input[type=range] { accent-color: var(--honey); }
+.phone .editing .touch-control.inactive { border-style: dashed; }
+.phone.studio-preview #editor,.phone.studio-preview #fullscreen{display:none!important}
+.phone.studio-preview .controller-content.editing{display:flex;overflow:hidden}
+.phone.studio-preview .controller-content.editing .controller-stage{height:auto;min-height:0;flex:1}
+
+.phone .stick-directions{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:#c5d4e6;stroke-width:3;stroke-linecap:round;opacity:.55;pointer-events:none}
+.phone .stick-eightway .stick-knob{position:relative}

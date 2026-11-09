@@ -1,0 +1,26 @@
+**/bin/
+**/obj/
+**/node_modules/
+tools/*.exe
+tools/*Controller.cs
+tools/dotnet-install.ps1
+release/
+.playwright-cli/
+ui/.playwright-cli/
+tools/*.pid
+tools/release-smoke-data/
+ui/dist/
+src/BeeHooks.App/wwwroot/assets/
+src/BeeHooks.App/wwwroot/fonts/
+src/BeeHooks.App/wwwroot/index.html
+src/BeeHooks.App/wwwroot/controller.html
+
+# Local development notes and test captures
+/AGENTS.md
+/CHECKPOINT.md
+/BeeHooks-Design-Research/
+/evidence/*
+!/evidence/.gitkeep
+!/evidence/media/
+/evidence/media/*
+!/evidence/media/.gitkeep

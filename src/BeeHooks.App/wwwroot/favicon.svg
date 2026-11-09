@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>BeeStation</title>
+  <rect width="128" height="128" rx="28" fill="#0c1016"/>
+  <g transform="translate(0 5)" fill="none" stroke="#f5c451" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m46 22 18 10.4L82 22l18 10.4v20.8L82 63.6v20.8L64 94.8 46 84.4V63.6L28 53.2V32.4Z"/>
+    <path d="M64 32.4v20.8L46 63.6m18-10.4 18 10.4"/>
+  </g>
+</svg>
